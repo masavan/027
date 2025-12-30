@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Slider</title>
+</head>
+<body>
+<div class="slider">
+    <div id="slider-controls" class="slider__controls">
+        <button id="slider-play" class="slider__controls-btn slider__controls-btn--play"><i class="fa-solid fa-circle-pause"></i></button>
+        <button id="slider-prev" class="slider__controls-btn slider__controls-btn-prev"><i class="fa-solid fa-circle-arrow-left"></i></button>
+        <button id="slider-next" class="slider__controls-btn slider__controls-btn-next"><i class="fa-solid fa-circle-arrow-right"></i></button>
+        <div id="slider-points" class="slider__points">
+            <!-- <span data-index="0"></span>
+                <span data-index="1"></span>
+                <span data-index="2"></span>
+                <span data-index="3"></span>
+                <span data-index="4"></span> -->
+        </div>
+    </div>
+    <div id="slider-list" class="slider__list">
+        <div class="slider__item">1</div>
+        <div class="slider__item">2</div>
+        <div class="slider__item">3</div>
+        <div class="slider__item">4</div>
+        <div class="slider__item">5</div>
+    </div>
+</div>
+
+
+<script src="./main.js"></script>
+
+<script>
+    slider.init(
+        { container: ".slider", items: ".slider__item" },
+        { duration: 1000 }
+    );
+</script>
+</body>
+</html>
